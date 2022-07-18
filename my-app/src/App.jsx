@@ -1,5 +1,6 @@
+import { useState } from "react";
 import "./App.css";
-import Card from "./Card"
+import Card from "./components/Card"
 
 
 
@@ -8,17 +9,30 @@ import Card from "./Card"
 
 
 const App = () =>{
-  
+  // const data = ["DARIS","PEDJA","MILJAN","LJANMI"]
+  const [data,setData]=useState([])
+  let a
   return <div className="container">
     <h1>Todo List</h1>
     <div className="unos">
-      <input type="text" />
-      <button>Submit</button>
+      <input type="text" onChange={(e) =>{
+        a = e.target.value
+      }} />
+      <button onClick={() =>{
+        setData([...data,a])
+        console.log(data)
+      }}>Dodaj</button>
     </div>
-    
-    <Card />
-    <Card />
+    {
+      data.map((el)=>{
+        return <Card title={el} />
 
+      })
+    }
+    
+    {/* <Card title={"Daris"} />
+    <Card  title={"Ljanmi"}/>
+     */}
     
 
 
