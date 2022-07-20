@@ -12,6 +12,8 @@ const App = () =>{
   // const data = ["DARIS","PEDJA","MILJAN","LJANMI"]
   const [data,setData]=useState([])
   let a
+  
+  
   return <div className="container">
     <h1>Todo List</h1>
     <div className="unos">
@@ -30,9 +32,7 @@ const App = () =>{
       })
     }
     
-    {/* <Card title={"Daris"} />
-    <Card  title={"Ljanmi"}/>
-     */}
+   
     
 
 
