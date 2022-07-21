@@ -1,46 +1,13 @@
-import { useState } from "react";
-import "./App.css";
-import Card from "./components/Card"
-
-
-
-
-
-
+import "./App.css"
+import Todo from "./components/Todo"
 
 const App = () =>{
-  // const data = ["DARIS","PEDJA","MILJAN","LJANMI"]
-  const [data,setData]=useState([])
-  let a
-  
-  
-  return <div className="container">
-    <h1>Todo List</h1>
-    <div className="unos">
-      <input type="text" onChange={(e) =>{
-        a = e.target.value
-      }} />
-      <button onClick={() =>{
-        setData([...data,a])
-        console.log(data)
-      }}>Dodaj</button>
-    </div>
-    {
-      data.map((el)=>{
-        return <Card title={el} />
-
-      })
-    }
-    
-   
-    
-
-
-
-
-    
-   
+  return <div>
+    <Todo />
   </div>
+
+
 }
 
-export default App;
+
+export default App
