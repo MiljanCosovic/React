@@ -1,6 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container{
   width: 100%;
-  background-color: lightblue;
+  background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
   min-height: 100vh;
   display: flex;
   flex-direction: column  ;
@@ -9,12 +14,30 @@
 h1{
   font-size: 60px;
   color: white;
+  margin-top: 50px;
 }
+
 .unos{
-  margin: 20px 0px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: row;
+  justify-content: center;
+  align-items: center;
+}
+.unos input{
+  height: 30px;
+  width: 420px;
+}
+.unos button{
+  width: 70px;
+  height: 30px;
+  font-size: 18px;
 }
 .card{
-  background-color: orange;
+  background-color: whitesmoke;
+  border: 1px solid #7fff00;
+  border-radius: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,22 +51,28 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
 
 }
 
 .card button{
-  height: 100%;
-  margin-right: 10px;
+  height: 80%;
   border-radius: 10px;
   border: none;
-  width: 90px;
+  width: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
 }
+
 .delete{
-  background-color: aqua;
+  background-color: #ff4040;
 }
 .check{
-  background-color: blueviolet;
+  background-color: #7fff00;
 }
 .d{
   display: flex;
@@ -51,3 +80,7 @@ h1{
   align-items: center;
   justify-content: center;
 }
+
+.checked{
+  background-color: #7fff00;
+} 
