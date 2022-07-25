@@ -1,10 +1,25 @@
 import "./App.css"
-import Todo from "./components/Todo"
+import Form from "./components/Form"
+// import { useEffect, useState } from "react";
+// import Fetch from "./components/Fetch";
+// import DataFetching from "./components/DataFetching"
+
+
 
 const App = () =>{
-  return <div>
-    <Todo />
+ return(
+ <div>
+  {
+  
+<Form />
+ 
+  
+  }
+  
+  
   </div>
+ )
+ 
 
 
 }
